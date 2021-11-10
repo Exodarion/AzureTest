@@ -15,4 +15,12 @@ public class RestControllerTest
 		return person;
 	}
 	
+	@GetMapping("randomEndpoint2")
+	public Person GetPersonData2() 
+	{
+		Person person = new Person();
+		person.setFirstName("Bram2");
+		person.setLastName("Boog2");
+		return person;
+	}
 }
