@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class RestControllerTest 
 {
 	@GetMapping("randomEndpoint")
-	public String GetPersonData() 
+	public Person GetPersonData() 
 	{
 		Person person = new Person();
 		person.setFirstName("Bram");
-		person.setLastName("Dingetje");
-		return person.getFirstName() + " : " + person.getLastName();
+		person.setLastName("Boog");
+		return person;
 	}
 	
 }
